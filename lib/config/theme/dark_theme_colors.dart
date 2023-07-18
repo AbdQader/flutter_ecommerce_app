@@ -1,25 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 
-// TODO add your dark theme colors palette
 class DarkThemeColors
 {
   //dark swatch
-  static const Color primaryColor = Colors.orange;
-  static Color accentColor = Colors.blueAccent;
+  static const Color primaryColor = Color(0xFF40DF9F);
+  static const Color accentColor = Color(0xFFD9EDE1);
 
   //Appbar
   static const Color appbarColor = Colors.black;
 
   //SCAFFOLD
-  static const Color scaffoldBackgroundColor = Color(0xff171d2d);
-  static const Color backgroundColor = Color(0xff171d2d);
-  static const Color dividerColor = Color(0xff686868);
-  static const Color cardColor = Color(0xff1e2336);
+  static const Color scaffoldBackgroundColor = Color(0xFF1F2E35);
+  static const Color backgroundColor = Color(0xFF30444E);
+  static const Color dividerColor = primaryColor;
+  static const Color cardColor = Color(0xFF1e2336);
 
   //ICONS
   static const Color appBarIconsColor = Colors.white;
-  static const Color iconColor = primaryColor;
+  static const Color iconColor = Color(0xFF96A7AF);
 
   //BUTTON
   static const Color buttonColor = primaryColor;
@@ -28,9 +26,9 @@ class DarkThemeColors
   static const Color buttonDisabledTextColor = Colors.black;
 
   //TEXT
-  static const Color bodyTextColor = Colors.white70;
-  static const Color headlinesTextColor = primaryColor;
-  static const Color captionTextColor = Colors.grey;
+  static const Color bodyTextColor = Color(0xFF96A7AF);
+  static const Color headlinesTextColor = Colors.white;
+  static const Color captionTextColor = Colors.black;
   static const Color hintTextColor = Color(0xff686868);
 
   //chip
