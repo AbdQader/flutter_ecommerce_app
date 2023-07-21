@@ -59,4 +59,4 @@ The Flutter eCommerce UI is a visually captivating and fully functional User Int
 ## Don't forget to :star: the repository.
 
 ## Support ❤️
-For support, you can contact me at this [Email](abd8alqader@gmail.com) or at [Facebook](https://www.facebook.com/aasharef/).
+For support, you can contact me at this [Email](mailto:abd8alqader@gmail.com) or at [Facebook](https://www.facebook.com/aasharef/).
