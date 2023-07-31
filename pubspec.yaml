@@ -8,8 +8,8 @@ environment:
 dependencies: 
   cupertino_icons:
   get: # for state management and context less stuff
-  flutter_screenutil: # make app responsive
-  shared_preferences: # shared preferences persistence key value store
+  flutter_screenutil: ^5.8.4 # make app responsive
+  shared_preferences: ^2.2.0 # shared preferences persistence key value store
   flutter_launcher_icons: # change app icon
   change_app_package_name: # change package name
   rename_app: # rename app
