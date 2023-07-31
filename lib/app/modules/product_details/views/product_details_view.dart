@@ -89,7 +89,7 @@ class ProductDetailsView extends GetView<ProductDetailsController> {
                 padding: EdgeInsets.symmetric(horizontal: 20.w),
                 child: Text(
                   controller.product.name!,
-                  style: theme.textTheme.bodyText1,
+                  style: theme.textTheme.bodyLarge,
                 ).animate().fade().slideX(
                   duration: const Duration(milliseconds: 300),
                   begin: -1,
@@ -103,14 +103,14 @@ class ProductDetailsView extends GetView<ProductDetailsController> {
                   children: [
                     Text(
                       '\$${controller.product.price}',
-                      style: theme.textTheme.headline4,
+                      style: theme.textTheme.displayMedium,
                     ),
                     30.horizontalSpace,
                     const Icon(Icons.star_rounded, color: Color(0xFFFFC542)),
                     5.horizontalSpace,
                     Text(
                       controller.product.rating!.toString(),
-                      style: theme.textTheme.bodyText2?.copyWith(
+                      style: theme.textTheme.bodyMedium?.copyWith(
                         fontSize: 18.sp,
                         fontWeight: FontWeight.bold
                       ),
@@ -118,7 +118,7 @@ class ProductDetailsView extends GetView<ProductDetailsController> {
                     5.horizontalSpace,
                     Text(
                       '(${controller.product.reviews!})',
-                      style: theme.textTheme.bodyText2?.copyWith(fontSize: 16.sp),
+                      style: theme.textTheme.bodyMedium?.copyWith(fontSize: 16.sp),
                     ),
                   ],
                 ).animate().fade().slideX(
@@ -132,7 +132,7 @@ class ProductDetailsView extends GetView<ProductDetailsController> {
                 padding: EdgeInsets.symmetric(horizontal: 20.w),
                 child: Text(
                   'Choose your size:',
-                  style: theme.textTheme.bodyText2?.copyWith(
+                  style: theme.textTheme.bodyMedium?.copyWith(
                     fontSize: 18.sp,
                     fontWeight: FontWeight.bold
                   ),

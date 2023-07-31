@@ -70,14 +70,14 @@ class ProductItem extends StatelessWidget {
               ],
             ),
             10.verticalSpace,
-            Text(product.name!, style: theme.textTheme.bodyText2)
+            Text(product.name!, style: theme.textTheme.bodyMedium)
               .animate().fade().slideY(
                 duration: const Duration(milliseconds: 200),
                 begin: 1,
                 curve: Curves.easeInSine,
               ),
             5.verticalSpace,
-            Text('\$${product.price}', style: theme.textTheme.headline6)
+            Text('\$${product.price}', style: theme.textTheme.displaySmall)
               .animate().fade().slideY(
                 duration: const Duration(milliseconds: 200),
                 begin: 2,

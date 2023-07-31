@@ -27,8 +27,8 @@ class LightThemeColors
 
   //TEXT
   static const Color bodyTextColor = Color(0xFF30444E);
-  static const Color headlinesTextColor = Colors.black;
-  static const Color captionTextColor = Colors.grey;
+  static const Color displayTextColor = Colors.black;
+  static const Color bodySmallTextColor = Color(0xFF30444E);
   static const Color hintTextColor =  Color(0xff686868);
 
   //chip

@@ -61,7 +61,7 @@ class CartView extends GetView<CartController> {
                         children: [
                           SvgPicture.asset(Constants.busIcon),
                           5.verticalSpace,
-                          Text('FREE', style: theme.textTheme.headline6?.copyWith(
+                          Text('FREE', style: theme.textTheme.displaySmall?.copyWith(
                             color: Colors.white,
                           )),
                         ],
@@ -71,20 +71,20 @@ class CartView extends GetView<CartController> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Total:', style: theme.textTheme.bodyText1?.copyWith(
+                        Text('Total:', style: theme.textTheme.bodyLarge?.copyWith(
                           fontSize: 18.sp,
                         )),
                         10.verticalSpace,
                         Text(
                           '\$${controller.total.toStringAsFixed(2)}',
-                          style: theme.textTheme.headline3?.copyWith(
+                          style: theme.textTheme.displayLarge?.copyWith(
                             decoration: TextDecoration.underline,
                             decorationColor: theme.primaryColor.withOpacity(0.5),
                             decorationThickness: 1,
                             color: Colors.transparent,
                             shadows: [
                               Shadow(
-                                color: theme.textTheme.headline3!.color!,
+                                color: theme.textTheme.displayLarge!.color!,
                                 offset: const Offset(0, -5)
                               ),
                             ],

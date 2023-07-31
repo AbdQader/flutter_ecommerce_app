@@ -22,7 +22,7 @@ class SizeItem extends StatelessWidget {
         width: 30.w,
         height: 30.h,
         decoration: BoxDecoration(
-          color: selected ? theme.primaryColor : theme.backgroundColor,
+          color: selected ? theme.primaryColor : theme.colorScheme.background,
           borderRadius: BorderRadius.circular(12.r),
           boxShadow: !selected ? null : [
             BoxShadow(
@@ -36,7 +36,7 @@ class SizeItem extends StatelessWidget {
         child: Center(
           child: Text(
             label,
-            style: theme.textTheme.headline6?.copyWith(
+            style: theme.textTheme.displaySmall?.copyWith(
               fontSize: 12.sp,
               fontWeight: FontWeight.bold,
               color: selected ? Colors.white : null

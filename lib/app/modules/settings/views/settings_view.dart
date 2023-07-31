@@ -27,7 +27,7 @@ class SettingsView extends GetView<SettingsController> {
             20.verticalSpace,
             Text(
               'Account',
-              style: theme.textTheme.headline4?.copyWith(
+              style: theme.textTheme.displayMedium?.copyWith(
                 fontSize: 20.sp,
                 fontWeight: FontWeight.normal,
               )
@@ -41,7 +41,7 @@ class SettingsView extends GetView<SettingsController> {
             30.verticalSpace,
             Text(
               'Settings',
-              style: theme.textTheme.headline4?.copyWith(
+              style: theme.textTheme.displayMedium?.copyWith(
                 fontSize: 20.sp,
                 fontWeight: FontWeight.normal,
               )
