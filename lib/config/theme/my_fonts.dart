@@ -41,14 +41,6 @@ class MyFonts
   static double get body1TextSize => 20.sp;
   static double get body2TextSize => 14.sp;
 
-  // headlines font size
-  static double get headline1TextSize => 50.sp;
-  static double get headline2TextSize => 42.sp;
-  static double get headline3TextSize => 24.sp;
-  static double get headline4TextSize => 18.sp;
-  static double get headline5TextSize => 16.sp;
-  static double get headline6TextSize => 14.sp;
-
   //button font size
   static double get buttonTextSize => 16.sp;
 

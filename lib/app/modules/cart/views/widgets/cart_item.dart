@@ -56,7 +56,7 @@ class CartItem extends GetView<CartController> {
               Text('Size: ${product.size}', style: theme.textTheme.bodyMedium?.copyWith(fontSize: 16.sp)),
               5.verticalSpace,
               Text('\$${product.price}', style: theme.textTheme.displayLarge?.copyWith(
-                fontSize: 42.sp,
+                fontSize: 18.sp,
               ),),
               10.verticalSpace,
               GetBuilder<CartController>(
