@@ -29,7 +29,9 @@ class MyTheme {
         // hint text color
         hintColor: isLight ? LightThemeColors.hintTextColor : DarkThemeColors.hintTextColor,
         // divider color
-        dividerColor: isLight ? LightThemeColors.dividerColor : DarkThemeColors.dividerColor,
+        dividerTheme: DividerThemeData(
+          color: isLight ? LightThemeColors.dividerColor : DarkThemeColors.dividerColor,
+        ),
         // app background color
         scaffoldBackgroundColor: isLight ? LightThemeColors.scaffoldBackgroundColor : DarkThemeColors.scaffoldBackgroundColor,
 
