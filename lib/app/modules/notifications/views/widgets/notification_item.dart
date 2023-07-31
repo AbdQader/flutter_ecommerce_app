@@ -21,7 +21,7 @@ class NotificationItem extends StatelessWidget {
       child: ListTile(
         title: Text(
           'New Notification received\nyour cart waiting for checkout',
-          style: theme.textTheme.headline6?.copyWith(
+          style: theme.textTheme.displaySmall?.copyWith(
             fontWeight: FontWeight.normal,
           ),
         ),
@@ -29,7 +29,7 @@ class NotificationItem extends StatelessWidget {
           padding: EdgeInsets.only(top: 5.h),
           child: Text(
             '10/06/2022 AT 05:30 PM',
-            style: theme.textTheme.bodyText2?.copyWith(
+            style: theme.textTheme.bodyMedium?.copyWith(
               fontSize: 12.sp,
             ),
           ),

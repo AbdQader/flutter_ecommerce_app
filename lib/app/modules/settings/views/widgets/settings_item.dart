@@ -24,10 +24,12 @@ class SettingsItem extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = context.theme;
     return ListTile(
-      title: Text(title, style: theme.textTheme.headline5),
+      title: Text(title, style: theme.textTheme.displayMedium?.copyWith(
+        fontSize: 16.sp,
+      )),
       subtitle: !isAccount ? null : Text(
         '+191 23 456 7890',
-        style: theme.textTheme.headline6,
+        style: theme.textTheme.displaySmall,
       ),
       leading: CircleAvatar(
         radius: isAccount ? 30.r : 25.r,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 class ScreenTitle extends StatelessWidget {
@@ -15,8 +16,10 @@ class ScreenTitle extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(title, style: context.theme.textTheme.headline2),
-        Divider(thickness: 3, endIndent: dividerEndIndent ?? 250),
+        Text(title, style: context.theme.textTheme.displayLarge?.copyWith(
+          fontSize: 42.sp,
+        )),
+        Divider(thickness: 3, endIndent: dividerEndIndent ?? 250,),
       ],
     );
   }

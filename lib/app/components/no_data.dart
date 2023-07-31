@@ -15,7 +15,7 @@ class NoData extends StatelessWidget {
         80.verticalSpace,
         Image.asset(Constants.noData),
         20.verticalSpace,
-        Text(text ?? 'No Data', style: context.textTheme.headline4),
+        Text(text ?? 'No Data', style: context.textTheme.displayMedium),
       ],
     );
   }

@@ -13,7 +13,15 @@ class MyTheme {
         // main color (app bar,tabs..etc)
         primaryColor: isLight ? LightThemeColors.primaryColor : DarkThemeColors.primaryColor,
         // secondary color (for checkbox,float button, radio..etc)
-        accentColor: isLight ? LightThemeColors.accentColor : DarkThemeColors.accentColor,
+      // secondary & background color
+      colorScheme: ColorScheme.fromSwatch(
+          accentColor: isLight ? LightThemeColors.accentColor : DarkThemeColors.accentColor,
+          backgroundColor: isLight ? LightThemeColors.backgroundColor : DarkThemeColors.backgroundColor,
+          brightness: isLight ? Brightness.light : Brightness.dark,
+        )
+            .copyWith(
+          secondary: isLight ? LightThemeColors.accentColor : DarkThemeColors.accentColor,
+        ),
         // color contrast (if the theme is dark text should be white for example)
         brightness: isLight ? Brightness.light : Brightness.dark,
         // card widget background color
@@ -21,9 +29,10 @@ class MyTheme {
         // hint text color
         hintColor: isLight ? LightThemeColors.hintTextColor : DarkThemeColors.hintTextColor,
         // divider color
-        dividerColor: isLight ? LightThemeColors.dividerColor : DarkThemeColors.dividerColor,
+        dividerTheme: DividerThemeData(
+          color: isLight ? LightThemeColors.dividerColor : DarkThemeColors.dividerColor,
+        ),
         // app background color
-        backgroundColor: isLight ? LightThemeColors.backgroundColor : DarkThemeColors.backgroundColor,
         scaffoldBackgroundColor: isLight ? LightThemeColors.scaffoldBackgroundColor : DarkThemeColors.scaffoldBackgroundColor,
 
         // progress bar theme

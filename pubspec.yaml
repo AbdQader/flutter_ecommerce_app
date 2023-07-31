@@ -2,14 +2,14 @@ name: ecommerce_app
 version: 1.0.0+1
 publish_to: none
 description: A new Flutter project.
-environment: 
-  sdk: '>=2.16.0 <3.0.0'
+environment:
+  sdk: '>=3.0.1 <4.0.0'
 
 dependencies: 
   cupertino_icons:
   get: # for state management and context less stuff
-  flutter_screenutil: # make app responsive
-  shared_preferences: # shared preferences persistence key value store
+  flutter_screenutil: ^5.8.4 # make app responsive
+  shared_preferences: ^2.2.0 # shared preferences persistence key value store
   flutter_launcher_icons: # change app icon
   change_app_package_name: # change package name
   rename_app: # rename app
@@ -53,12 +53,3 @@ flutter:
           weight: 500
         - asset: assets/fonts/Poppins-SemiBold.ttf
           weight: 700
-    - family: Cairo
-      fonts:
-        - asset: assets/fonts/Cairo-Regular.ttf
-          weight: 300
-        - asset: assets/fonts/Cairo-Medium.ttf
-          weight: 500
-        - asset: assets/fonts/Cairo-SemiBold.ttf
-          weight: 900
-
