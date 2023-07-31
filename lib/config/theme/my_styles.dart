@@ -101,7 +101,7 @@ class MyStyles {
       secondaryLabelStyle: getChipTextStyle(isLightTheme: isLightTheme),
       selectedColor: Colors.black,
       disabledColor: Colors.green,
-      padding: EdgeInsets.all(5),
+      padding: const EdgeInsets.all(5),
       secondarySelectedColor: Colors.purple,
     );
   }
